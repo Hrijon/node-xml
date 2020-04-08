@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE 
+     <!ELEMENT poetry (anthology+)>
+       <!ELEMENT anthology (poem*)>
+         <!ELEMENT poem (title, author, publisher, stanza+)>
+           <!ELEMENT anthology (poem)> 
+           <!ELEMENT title (#PCDATA) >
+           <!ELEMENT author (#PCDATA) >
+           <!ELEMENT publisher (#PCDATA) >
+           <!ELEMENT stanza (line+) >
+           <!ELEMENT line (#PCDATA) >
+             <!-- An obvious mistake on this line -->
+>
+
+<poetry>
+	<anthology>
+		<poem>
+			<title>The SICK ROSE</title>
+			<author>William Blake</author>
+			<publisher>Poetry Foundation</publisher>
+			<stanza>
+				<line>O Rose thou art sick.</line>
+				<line>The invisible worm,</line>
+				<line>That flies in the night</line>
+				<line>In the howling storm,</line>
+			</stanza> 
+            <stanza>
+                <line>Has found out thy bed</line>
+                <line>Of crimson joy:</line>
+                <line>And his dark secret love</line>
+                <line>Does thy life destroy.</line>
+            </stanza>
+			<stanza>
+				<line>ZZZ...</line>
+				<line>ZZZ...</line>
+				<line />
+			</stanza>
+		</poem>
+		<poem>
+			<title>Sleep</title>
+			<author>Blakey</author>
+			<publisher>Sandman Corporation</publisher>
+
+			<!-- Comment: A pretty pointless poem -->
+			<stanza>
+				<line>ZZZ...</line>
+				<line />
+			</stanza>
+		</poem>
+	</anthology>
+</poetry>
+
