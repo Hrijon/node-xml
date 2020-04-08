@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<!-- Text not properly tagged -->
+
+<course>
+     <name>Bachelor of Science - Internet Computing</name>
+     <duration>3 years</duration>
+     <unit>
+          <title>ICT375 Advanced Web Programming</title>
+          <lecturer>
+              <surname language="English">Xie</surname>
+              <othernames language="English">Hong</othernames>
+		  	  <email>H.Xie@murdoch.edu.au</email>
+          </lecturer>
+     </unit>
+     <unit>
+          <title>ICT108 Introduction to Multimedia and the Internet</title>
+          <lecturer>
+              <surname>Rai</surname>
+              <othernames>Shri</othernames>
+          </lecturer>
+          <email>s.rai@murdoch.edu.au</email>
+     </unit>
+</course>
