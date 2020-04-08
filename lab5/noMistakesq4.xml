@@ -1,0 +1,62 @@
+<?xml version="1.0"?> <!--Changed ! to ? -->
+
+<!DOCTYPE poetry [
+	<!ELEMENT poetry (anthology+)>
+	<!ELEMENT anthology (poem+)>
+	<!ELEMENT poem (title, author, publisher, stanza+)>
+	<!ELEMENT title (#PCDATA) >
+	<!ELEMENT author (#PCDATA) >
+	<!ELEMENT publisher (#PCDATA) >
+	<!ELEMENT stanza (line+) >
+	<!ELEMENT line (#PCDATA | EMPTY)* > <!--added missing '*' -->
+]>
+
+<!--added poetry element to match dtd format-->
+<poetry>
+    <anthology>
+        <poem>
+            <!-- A pretty poem -->
+            <title>The SICK ROSE</title>
+            <author>William Blake</author>
+            <publisher> Hchp </publisher>
+            <stanza>
+                <line>Rose thou art sick.</line>
+                <line>The invisible worm,</line>
+                <line>That flies in the night</line>
+                <line>In the howling storm,</line>
+                <line/>
+            </stanza> 
+           <stanza>
+			<line></line>
+			<line></line>
+			<line />
+			<line />
+		</stanza>
+        </poem>
+        <poem>
+            <!-- Comment: A pretty pointless poem -->
+            <title>Sleep</title>
+            <author> Hrijon</author>
+            <publisher>Sandman Inc.</publisher>
+            <stanza>
+                <line>End line</line>
+            </stanza>
+        </poem>
+    </anthology>
+    <!--add anthology as its occurences of element anthology is 1 or more-->
+    <anthology>
+        <poem>
+            <title>Sleep</title>
+            <author> Hrijon</author>
+            <publisher>Sandman Inc.</publisher>
+            <stanza>
+                <line>Rose thou art sick.</line>
+                <line>The invisible worm,</line>
+                <line>That flies in the night</line>
+                <line>In the howling storm,</line>
+                <line/>
+            </stanza> 
+        </poem>
+    </anthology>
+</poetry>
+
