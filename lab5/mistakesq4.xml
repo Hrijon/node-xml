@@ -1,0 +1,41 @@
+<!xml version="1.0"!>
+
+<!DOCTYPE poetry [
+	<!ELEMENT poetry (anthology+)>
+	<!ELEMENT anthology (poem+)>
+	<!ELEMENT poem (title, author, publisher, stanza+)>
+	<!ELEMENT title (#PCDATA) >
+	<!ELEMENT author (#PCDATA) >
+	<!ELEMENT publisher (#PCDATA) >
+	<!ELEMENT stanza (line+) >
+	<!ELEMENT line (#PCDATA | EMPTY) >
+]>
+
+<anthology>
+	<poem>
+		<!-- A pretty poem -->
+		<title>The SICK ROSE<title>
+		<author>William Blake</author>
+		<stanza>
+			<line>O Rose thou art sick.</line>
+			<line>The invisible worm,</line>
+			<line>That flies in the night</line>
+			<line>In the howling storm,</line>
+		</stanza> 
+		<stanza>
+			<line></line>
+			<line></line>
+			<line />
+			<line />
+		</stanza>
+	</poem>
+	<poem>
+		<!-- Comment: A pretty pointless poem -->
+ 		<title>Sleep</title>
+		<publisher>Sandman Inc.</publisher>
+		<stanza />End line</line>
+	</poem>
+</anthology>
+</DOCTYPE>
+</xml>
+
