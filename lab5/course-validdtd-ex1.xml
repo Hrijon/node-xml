@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE course [
+      <!ELEMENT course (name, nonsense, unit+)>
+      <!ELEMENT name (#PCDATA)>
+      <!ELEMENT nonsense (#PCDATA)>
+      <!ELEMENT unit (title, lecturer*, tutor*)>
+      <!ELEMENT title (#PCDATA)>
+      <!ELEMENT lecturer (surname, othernames?, email*, semester*)>
+      <!ELEMENT tutor (surname, othernames?, email*)>
+      <!ELEMENT surname (#PCDATA) >
+      <!ATTLIST surname language CDATA "English">
+      <!ELEMENT othernames (#PCDATA) >
+      <!ATTLIST othernames language CDATA "English">
+      <!ELEMENT email (#PCDATA) >
+      <!ELEMENT semester (#PCDATA) >
+
+]>
+ 
+<course>
+     <name>Bachelor of Science - Internet Computing</name>
+     <nonsense>COMPLETELY NONSENSE</nonsense>
+     <unit>
+          <title>ICT375 Advanced Web Programming</title>
+          <lecturer>
+              <surname language="English">Xie</surname>
+              <othernames language="English">Hong</othernames>
+              <email>h.xie@murdoch.edu.au</email>
+          </lecturer>
+     </unit>
+     <unit>
+          <title>ICT108 Introduction to Multimedia and the Internet</title>
+          <lecturer>
+              <surname>Rai</surname>
+              <othernames>Shri</othernames>
+              <email>s.rai@murdoch.edu.au</email>
+          </lecturer>
+     </unit>
+     <unit>
+          <title>ICT302 IT Project</title>
+          <lecturer>
+              <surname>cole</surname>
+              <othernames>Peter</othernames>
+              <email></email>
+              <semester> 1 </semester>
+          </lecturer>
+     </unit>
+</course>
+
