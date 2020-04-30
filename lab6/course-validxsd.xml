@@ -20,12 +20,4 @@
 			<email>s.rai@murdoch.edu.au</email>
 		</lecturer>
 	</unit>
-    <unit>
-		<title>ICT302 IT Project</title>
-		<lecturer>
-			<surname>Cole</surname>
-			<othernames>Peter</othernames>
-			<semester>1</semester>
-		</lecturer>
-	</unit>
 </course>

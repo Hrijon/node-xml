@@ -8,8 +8,7 @@
     <xsd:element name="email" type="xsd:string"/>
     <xsd:element name="surname" type="xsd:string"/>
     <xsd:element name="othernames" type="xsd:string"/>
-    <xsd:element name="semester" type="xsd:integer"/>
-
+    
     <!-- COMPLEX ELEMENTS -->
 
     <xsd:element name="course">
@@ -36,8 +35,6 @@
                 <xsd:element ref="surname" />
                 <xsd:element ref="othernames" minOccurs="0" maxOccurs="1"/>
                 <xsd:element ref="email" minOccurs="0" maxOccurs="unbounded"/>
-                <xsd:element ref="semester" minOccurs="0" maxOccurs="unbounded"/>
-
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
