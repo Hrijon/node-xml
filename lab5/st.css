@@ -1,0 +1,32 @@
+course { 
+	color: white; 
+	background-color : gray; 
+	width: 100%; 
+} 
+w:t { 
+	color: green; 
+	font-size : 20px; 
+} 
+name { 
+	color: black; 
+	font-size : 20px; 
+	white-space: pre-line;
+	white-space: pre;
+} 
+unit { 
+	color: green; 
+	font-size : 40px; 
+	background-color : powderblue; 
+} 
+unit, title, lecture{ 
+	display : block; 
+} 
+
+/* lecture { 
+	
+}  */
+
+title { 
+    font-size : 25px; 
+    font-weight : bold; 
+} 
