@@ -16,7 +16,7 @@
         <availability>Internal</availability>
         <semester>1</semester>
         <description>This is an advanced unit in Internet and Web technologies.</description>
-        <exclusion>ICT 375</exclusion>
+        <exclusion>ICT336</exclusion>
 	</unit>
 	<unit>
 		<title>ICT108 Introduction to Multimedia and the Internet</title>
@@ -25,5 +25,19 @@
 			<othernames>Shri</othernames>
 			<email>s.rai@murdoch.edu.au</email>
 		</lecturer>
+
+		 <credit>4</credit>
+        <availability>External</availability>
+        <semester>2</semester>
+        <description>This is just for testing.</description>
+        <exclusion>ICT101</exclusion>
+	</unit>
+	<unit>
+		<title>ICT302 IT Project</title>
+		<lecturer>
+			<surname>Cole</surname>
+			<othernames>Peter</othernames>
+		</lecturer>
+		<semester>1</semester>
 	</unit>
 </course>

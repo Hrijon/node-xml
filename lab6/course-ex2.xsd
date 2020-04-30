@@ -9,14 +9,41 @@
     <xsd:element name="surname" type="xsd:string"/>
     <xsd:element name="othernames" type="xsd:string"/>
 
-    <!-- elements for ex1 -->
-    <xsd:element name="credit" type="xsd:integer"/>
-    <xsd:element name="availability" type="xsd:string"/>
-    <xsd:element name="semester" type="xsd:integer"/>
-    <xsd:element name="description" type="xsd:string"/>
-    <!-- <xsl:value-of select="." /> -->
-    <xsd:element name="exclusion" type="xsd:string"/>
+    <!-- simpleType elements for ex2 -->
+    <xsd:element name="credit">
+        <xsd:simpleType>
+            <xsd:restriction base="xsd:integer">
+                <xsd:pattern value="3"/>
+                <xsd:pattern value="4"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:element>
+    <xsd:element name="availability">
+        <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+                <xsd:pattern value="Internal"/>
+                <xsd:pattern value="External"/>
+                <xsd:pattern value="Both"/>
 
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:element>
+    <xsd:element name="semester">
+        <xsd:simpleType>
+            <xsd:restriction base="xsd:integer">
+                <xsd:pattern value="1"/>
+                <xsd:pattern value="2"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:element>
+    <xsd:element name="description" type="xsd:string"/>
+    <xsd:element name="exclusion">
+        <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+                <xsd:pattern value="ICT\d{3}"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:element>
 
     <!-- COMPLEX ELEMENTS -->
 
@@ -32,14 +59,16 @@
     <xsd:element name="unit">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element ref="title" />
+                <xsd:element ref="title"/>
                 <xsd:element ref="lecturer" minOccurs="0" maxOccurs="unbounded"/>
                 
                 <xsd:element ref="credit" minOccurs="0" maxOccurs="unbounded"/>
                 <xsd:element ref="availability" minOccurs="0" maxOccurs="unbounded"/>
                 <xsd:element ref="semester" minOccurs="0" maxOccurs="unbounded"/>
                 <xsd:element ref="description" minOccurs="0" maxOccurs="unbounded"/>
+                
                 <xsd:element ref="exclusion" minOccurs="0" maxOccurs="unbounded"/>
+
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -53,8 +82,6 @@
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
-
-
 
 </xsd:schema>
 
