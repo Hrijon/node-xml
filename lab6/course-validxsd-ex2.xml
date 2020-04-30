@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<course xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="course.xsd">
+	<name>Bachelor of Science - Internet Computing. list of units</name>
+	
+	<unit>
+		<title>ICT375 Advanced Web Programming</title>
+		<lecturer>
+			<surname>Xie</surname>
+			<othernames>Hong</othernames>
+			<email>H.Xie@murdoch.edu.au</email>
+        </lecturer>
+
+        <credit>3</credit>
+        <availability>Internal</availability>
+        <semester>1</semester>
+        <description>This is an advanced unit in Internet and Web technologies.</description>
+        <exclusion>ICT 375</exclusion>
+	</unit>
+	<unit>
+		<title>ICT108 Introduction to Multimedia and the Internet</title>
+		<lecturer>
+			<surname>Rai</surname>
+			<othernames>Shri</othernames>
+			<email>s.rai@murdoch.edu.au</email>
+		</lecturer>
+	</unit>
+</course>
