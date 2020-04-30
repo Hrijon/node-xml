@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <!-- SIMPLE ELEMENTS -->
+
+    <xsd:element name="name" type="xsd:string"/>
+    <xsd:element name="title" type="xsd:string"/>
+    <xsd:element name="email" type="xsd:string"/>
+    <xsd:element name="surname" type="xsd:string"/>
+    <xsd:element name="othernames" type="xsd:string"/>
+    <xsd:element name="semester" type="xsd:integer"/>
+
+    <!-- COMPLEX ELEMENTS -->
+
+    <xsd:element name="course">
+        <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element ref="name" />
+              <xsd:element ref="unit" minOccurs="0" maxOccurs="unbounded"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="unit">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="title" />
+                <xsd:element ref="lecturer" minOccurs="0" maxOccurs="unbounded"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="lecturer">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="surname" />
+                <xsd:element ref="othernames" minOccurs="0" maxOccurs="1"/>
+                <xsd:element ref="email" minOccurs="0" maxOccurs="unbounded"/>
+                <xsd:element ref="semester" minOccurs="0" maxOccurs="unbounded"/>
+
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>
+
